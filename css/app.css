@@ -1,0 +1,28 @@
+.mobile-menu {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    background: radial-gradient(#e76b8f 30%, #f48fb1 90%);
+    padding: 20px;
+    transition: 0.4s;
+    transition-delay: 0.2s;
+    transform: translateX(-200px);
+
+
+}
+
+.open {
+    transform: translateX(0);
+
+}
+
+.icon a {
+    color: black;
+    margin: 10px 30px;
+    padding: 10px;
+    border-radius: 20px;
+    border: white;
+    display: block;
+}

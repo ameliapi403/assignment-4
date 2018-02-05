@@ -1,0 +1,39 @@
+.content {
+  padding: 100px;
+  background: linear-gradient(to right, transparent, #f8bbd0, #f48fb1, #f8bbd0, transparent); }
+
+form {
+  margin: 0 auto;
+  padding: 20px;
+  width: 450px;
+  border: 2px solid #BBBBBB;
+  border-radius: 25px;
+  background: linear-gradient(to bottom, transparent, #E0E0E0);
+  font-family: "Lato", sans-serif; }
+
+form div + div {
+  margin-top: 25px; }
+
+label {
+  display: inline-block;
+  width: 100px;
+  text-align: left; }
+
+input, textarea {
+  font-family: "Roboto", sans-serif;
+  width: 300px;
+  box-sizing: border-box;
+  border: 2px solid #AAAAAA; }
+
+input:focus, textarea:focus {
+  border-color: #111111; }
+
+textarea {
+  vertical-align: top;
+  height: 200px; }
+
+button {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 25px;
+  font-size: 1.5em; }

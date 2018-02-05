@@ -1,0 +1,26 @@
+.content {
+  padding: 100px;
+  background: linear-gradient(to right, transparent, #f8bbd0, #f48fb1, #f8bbd0, transparent); }
+
+form {
+  margin: 0 auto;
+  padding: 25px;
+  width: 500px;
+  border: 2px solid #BBBBBB;
+  border-radius: 25px;
+  background: linear-gradient(to bottom, transparent, #E0E0E0);
+  font-family: "Lato", sans-serif; }
+
+form div + div {
+  margin-top: 25px; }
+
+label {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: left; }
+
+button {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 25px;
+  font-size: 1.5em; }

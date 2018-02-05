@@ -1,0 +1,61 @@
+/* spacing */
+/* header {
+    height: 100px;
+    margin: 50px;
+
+} */
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 8px 30px 8px #eeeeee; }
+
+caption {
+  display: table-caption;
+  caption-side: top;
+  text-align: left;
+  font-size: 36px;
+  font-weight: 300;
+  margin: 2px; }
+
+thead th:nth-child(1) {
+  width: 1500%; }
+
+thead th:nth-child(2) {
+  width: 3500%; }
+
+thead th:nth-child(3) {
+  width: 5000%; }
+
+th:nth-child(1),
+td:nth-child(1) {
+  text-align: left; }
+
+th:nth-child(2),
+th:nth-child(3),
+td:nth-child(2),
+td:nth-child(3) {
+  text-align: right; }
+
+th, td {
+  padding: 20px; }
+
+tr + tr {
+  border: 1px solid lightgrey; }
+
+/* typography */
+th {
+  letter-spacing: 2px; }
+
+td {
+  letter-spacing: 1px; }
+
+tbody td {
+  text-align: center; }
+
+tfoot th {
+  text-align: right; }
+
+thead {
+  text-shadow: 1px 1px 1px grey;
+  background: linear-gradient(to right, coral, transparent); }

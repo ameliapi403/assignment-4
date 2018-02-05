@@ -1,0 +1,488 @@
+
+* {
+box-sizing: border-box;
+
+}
+
+.wrapper {
+ width: 80%;
+ margin: 0 auto;
+ max-width: 1000px;
+
+}
+
+ /* Header */
+
+header {
+    height: 75px;
+    background: linear-gradient(to bottom, #e76b8f, transparent);
+
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.desktop-nav {
+
+}
+
+/* parent */
+.desktop-nav,
+.nav-flex-container {
+    height: 75px;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+
+}
+
+/* child */
+.nav-box {
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 400;
+    font-size: 20px;
+
+}
+
+.nav-box a:hover {
+    color: white;
+}
+
+/* nav components & hovers */
+.logo,
+.language,
+.search {
+    color: #454545;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+
+}
+
+.logo:hover,
+.language:hover,
+.search:hover {
+    background: #7b1fa2;
+}
+
+.shopping {
+
+}
+
+.shopping:hover {
+    background: #ff6d00;
+}
+
+.about {
+
+}
+
+.about:hover {
+    background: #3e2723;
+}
+
+.attraction {
+
+}
+
+.attraction:hover {
+    background: #c62828;
+}
+
+.transportation {
+
+}
+
+.transportation:hover {
+    background: #303f9f;
+}
+
+.accommodation {
+
+}
+
+.accommodation:hover {
+    background: #880e4f;
+}
+
+.food {
+
+}
+
+.food:hover {
+    background: #006064;
+}
+
+.mobile-nav {
+    display: none;
+
+}
+
+/* Hero Section */
+.hero {
+    height: 600px;
+
+}
+
+/* parent class */
+.desk-hero-container,
+.hero-container {
+    height: 600px;
+    background: radial-gradient(transparent, mistyrose),
+    url("../img/fuji-color.jpg");
+    background-size: cover;
+
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+
+}
+
+.mobile-hero-container {
+    display: none;
+}
+
+/* child-class */
+.hero-box {
+    height: 100px;
+    margin: 60px;
+}
+
+.title {
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 700;
+    font-size: 60px;
+    margin-bottom: 20px;
+
+}
+
+.subtitle {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    padding-bottom: 10px;
+
+}
+
+/* Featured Product Sections */
+.highlight {
+    height: 500px;
+    padding: 30px;
+    margin-bottom: 50px;
+    /* background: #708090; */
+    background: radial-gradient(#faebd7 0%, #e76b8f 30%, #f48fb1 60%, transparent 90%);
+}
+
+.highlight h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    margin: 20px;
+}
+
+/* parent */
+.desk-hi,
+.hi-flex-container {
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.mobile-hi {
+    display: none;
+}
+
+.card-container {
+    width: 384px;
+    height: 261px;
+    margin: 10px;
+
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    position: relative;
+    overflow: hidden;
+
+}
+
+.card-container-1 {
+    background-image: url('../img/culture.jpg');
+
+}
+
+.card-container-2 {
+    background-image: url('../img/history.jpg');
+
+}
+
+.card-container-3 {
+    background-image: url('../img/nature.jpg');
+
+}
+
+
+/* child */
+.card {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, #5d4037, transparent);
+    transform: translateY(100px);
+    transition-duration: 0.4s;
+    transition-delay: 0.2s;
+    padding: 10px 30px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+
+}
+
+.card a {
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #ffccbc;
+
+}
+
+.card-container:hover .card {
+    transform: translateY(0px);
+}
+
+
+/* Event Section */
+.event {
+    height: 300px;
+    padding: 30px;
+    background: linear-gradient(to bottom, transparent, #f48fb1);
+
+}
+
+.event h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    margin: 20px;
+}
+
+.mobile-ev {
+    display: none;
+}
+
+/* parent */
+.desk-ev,
+.event-container {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+}
+
+/* child */
+.event-box {
+    height: 100px;
+    margin: 10px;
+    background: rgba(0, 0, 255, .2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+
+}
+
+
+/* grandparent */
+.footer-container {
+    height: 400px;
+    background: #808B96;
+
+}
+
+.head-container {
+    height: 100px;
+    margin: 0 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.head-container h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+/* parent */
+.desk-icon,
+.icon-container {
+    height: 250px;
+    margin: 0 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.icon-container a {
+    font-family: 'Raleway', sans-serif;
+    color: #333;
+}
+
+.social-container {
+    height: 250px;
+    margin: 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.fa {
+    height: 30px;
+    margin-bottom: 10px;
+
+}
+
+.contact-container {
+    height: 250px;
+    margin: 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.about-container {
+    height: 250px;
+    margin: 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.mobile-icon {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobile-nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        flex-grow: 1;
+        flex-shrink: 1;
+
+    }
+
+    .hero {
+        height: 250px;
+    }
+
+    .mobile-hero-container {
+        height: 250px;
+        background: radial-gradient(transparent, mistyrose),
+        url("../img/fuji.jpg");
+        background-size: cover;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+
+        flex-shrink: 1;
+        flex-grow: 1;
+
+    }
+
+    .highlight {
+        height: 900px;
+    }
+
+    .mobile-hi {
+        height: 850px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        flex-grow: 1;
+        flex-shrink: 1;
+
+    }
+
+    .event {
+        height: 800px;
+    }
+
+    .mobile-ev {
+        height: 650px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        flex-grow: 1;
+        flex-shrink: 1;
+
+    }
+
+    .event-box {
+        width: 60%;
+    }
+
+    .mobile-icon {
+        margin: 0 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        flex-grow: 1;
+        flex-shrink: 1;
+
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .desk-hero-container {
+        display: none;
+    }
+
+    .desk-hi {
+        display: none;
+    }
+
+    .desk-ev {
+        display: none;
+    }
+
+    .desk-icon {
+        display: none;
+    }
+}
