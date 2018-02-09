@@ -10,6 +10,12 @@
         <link rel="stylesheet" href="./css/res-style.css">
         <link rel="stylesheet" href="./css/styles.css">
         <link rel="stylesheet" href="./css/app.css">
+        <style>#map {
+        margin: 25px auto;
+        height: 400px;
+        width: 70%;
+        }
+        </style>
     </head>
 
 
@@ -164,6 +170,10 @@
 
             </form>
 
+
+            <div id="map"></div>
+
+
         </section>
 
         <footer class='footer-container'>
@@ -227,6 +237,21 @@
         </footer>
 
         <script src="./app.js" charset="utf-8"></script>
+        <script>
+            function initMap() {
+                var jap = {lat: 36.544927, lng: 138.347990}; 
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 4,
+                    center: jap
+                });
+                var marker = new google.maps.Marker({
+                    position: jap,
+                    map: map
+                });
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2lNBca569JcrgWZtE39EJMzlU8YqdxCI&callback=initMap">
+        </script>
 
     </body>
 
