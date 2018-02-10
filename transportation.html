@@ -233,22 +233,10 @@
         </footer>
 
         <script src="./app.js" charset="utf-8"></script>
-        <script>
-            function initMap() {
-                var jap = {lat: 36.544927, lng: 138.347990}; 
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 4,
-                    center: jap
-                });
-                var marker = new google.maps.Marker({
-                    position: jap,
-                    map: map
-                });
-            }
-        </script>
+        <script src="./map.js" charset="utf-8"></script>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2lNBca569JcrgWZtE39EJMzlU8YqdxCI&callback=initMap">
         </script>
-
+        
     </body>
 
 </html>
